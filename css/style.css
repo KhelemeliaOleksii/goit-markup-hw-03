@@ -60,7 +60,7 @@ img{
     display: block;
 }
 
-.section:not(:first-child){
+.section{
     padding-top: var(--vertical-section-offset-positive);
     padding-bottom: var(--vertical-section-offset-positive);
 }
@@ -165,8 +165,8 @@ img{
     background-color: var(--hero-background-color);
 }
 .hero-container{
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 106px;
+    padding-top: 106px;
     
 }
 .hero-title {
@@ -199,14 +199,6 @@ img{
     padding-left: -30px;
 } */
 
-
-.superiority-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 .superiority-list{
     display: flex;
     flex-wrap: wrap;
@@ -219,6 +211,16 @@ img{
     margin-left: var(--horisondal-content-offset-positive);
     margin-top: var(--horisondal-content-offset-positive);
     flex-basis: calc(100% / 4 - var(--horisondal-content-offset-positive));
+}
+
+
+.superiority-name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .superiority-after-title {
@@ -267,13 +269,14 @@ img{
     margin-top: var(--vertical-content-offset-positive);
     margin-left: var(--horisondal-content-offset-positive);
     background-color: var(--cards-background-color);
-
+    flex-basis: calc(100% / 4 - var(--horisondal-content-offset-positive));
 }
 
 .team-fig-caption {
     margin-top: var(--vertical-content-offset-positive);
     margin-bottom: var(--vertical-content-offset-positive);
 }
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -373,6 +376,7 @@ img{
     border-radius: 4px;
     background-color: var(--body-additional-color);
 }
+
 .product-list-btn:hover, .product-list-btn:focus {
     color: var(--active-btn-fonts-color);
     background-color: var(--active-btn-background-color);     
@@ -383,16 +387,20 @@ img{
     flex-wrap: wrap;
     margin-left: var(--horisondal-content-offset-negative);
 }
-.product-name-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.products-example-link {
+
+.products-example-item {
     background-color: var(--cards-background-color);
     margin-left: var(--horisondal-content-offset-positive);
     margin-top: var(--vertical-content-offset-positive);
     border-bottom: 1px solid var(--product-example-card-border);
     flex-basis: calc(100% / 3 - var(--horisondal-content-offset-positive));
+}
+
+.product-name-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .products-example-partner {
