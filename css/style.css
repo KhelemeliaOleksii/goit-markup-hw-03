@@ -51,7 +51,7 @@ body {
     list-style: none;
 }
 .container{
-    width: 1200;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -68,13 +68,14 @@ img{
 .header{
     background-color: var(--header-background-color);
     border-bottom: 1px solid var(--header-botton-color);
+    padding-bottom: 24px;
+    padding-top: 24px;
+
 }
 
 .header-container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 24px;
-    padding-top: 24px;
     align-items: center;
     justify-content: space-between;
 }
@@ -92,7 +93,7 @@ img{
     line-height: calc(31 / 26);
     letter-spacing: 0.03em; 
     color: var(--logo-first-color);
-    flex-grow: 0.5;
+    flex-grow: 0.6;
 }
 
 .header-post-logo {
@@ -186,14 +187,19 @@ img{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--body-fonts-onbackgraund-color);
     background-color: var(--hero-btn-background-color);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin:0 auto;
     border-radius: 4px;
+    border: 0;
 }
 /* .superiority-container {
     padding-left: -30px;
@@ -231,11 +237,11 @@ img{
     color: var(--general-text-fonts-color);
 }
 
-.scills-container {
-    margin-top: var(--vertical-section-offset-negative);
+.scills-section {
+    padding-top: 0;
 }
 
-.scills-title{
+.scills-title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -307,12 +313,11 @@ img{
 /*-----------------FOOTER------------------*/
 .footer{
     background-color: var(--footer-background-color);
-}
-
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+
 }
+
 .footer-logo-container {
     margin-bottom: 20px;
 }
@@ -375,6 +380,7 @@ img{
     border: 0;
     border-radius: 4px;
     background-color: var(--body-additional-color);
+    padding: 6px 22px;
 }
 
 .product-list-btn:hover, .product-list-btn:focus {
@@ -397,8 +403,8 @@ img{
 }
 
 .product-name-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
 }
